@@ -6,6 +6,7 @@ import pandas as pd
 
 # Define constants
 START_DATE = datetime(2024, 8, 1)
+START_MONTH=8
 END_DATE = datetime(2025, 3, 31)
 INITIAL_ODOMETER = 17569
 INR_PER_KM = 10
@@ -290,7 +291,7 @@ def create_month_sheet(ws, year, month, odometer_start):
 
 # Create sheets for each month
 current_odometer = INITIAL_ODOMETER
-for month in range(4, 13):  # Apr-Dec 2024
+for month in range(START_MONTH, 13):  # Apr-Dec 2024
     ws = workbook.create_sheet(title=datetime(2024, month, 1).strftime("%b%y"))
     create_month_sheet(ws, 2024, month, current_odometer)
     current_odometer += WORK_RELATED_KM * (pd.date_range(start=datetime(2024, month, 1),
