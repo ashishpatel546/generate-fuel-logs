@@ -11,6 +11,26 @@ Generate Excel workbooks for tracking fuel expenses and travel logs.
 - Adds company details, vehicle information, and employee data
 - Handles date ranges from any start to end month/year
 
+## Setup
+
+### Python Environment
+
+It's recommended to use a virtual environment for this project:
+
+```bash
+# Create a virtual environment
+python -m venv venv
+
+# Activate on Windows
+venv\Scripts\activate
+
+# Activate on macOS/Linux
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
 ## Quick Start
 
 ```bash
@@ -54,6 +74,15 @@ You can configure the generator either through a JSON file or command line argum
     "registration": "Delhi",
     "engine_size": "1199 CC"
   },
+  "holidays": [
+    "2024-08-15",
+    "2024-10-02",
+    "2024-10-31",
+    "2024-11-01",
+    "2024-12-25",
+    "2025-01-01",
+    "2025-01-26"
+  ],
   "output_file_path": "Financial_Year_2024_25_Log_Book.xlsx"
 }
 ```
@@ -70,9 +99,22 @@ You can configure the generator either through a JSON file or command line argum
 --rate-per-km      Rate per kilometer in INR
 ```
 
+### Holidays Configuration
+
+The `holidays` array in the config file allows you to specify dates that should be treated as holidays. These dates will be highlighted in the output Excel file like weekends. Dates should be in YYYY-MM-DD format:
+
+```json
+"holidays": [
+  "2024-08-15",  // Independence Day
+  "2024-10-02",  // Gandhi Jayanti
+  "2024-12-25"   // Christmas
+]
+```
+
 ## Output
 
 The generator produces an Excel workbook with:
+
 - One sheet per month in the specified date range
 - Company headers and employee details
 - Vehicle information

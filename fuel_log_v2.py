@@ -1,8 +1,8 @@
-import openpyxl
-from openpyxl.styles import Font, PatternFill, Border, Side, Alignment
-from openpyxl.utils import get_column_letter
+import openpyxl # type: ignore
+from openpyxl.styles import Font, PatternFill, Border, Side, Alignment # type: ignore
+from openpyxl.utils import get_column_letter # type: ignore
 from datetime import datetime, timedelta
-import pandas as pd
+import pandas as pd # type: ignore
 import os
 import argparse
 import json
