@@ -1,9 +1,9 @@
 {
-  "start_date": "2024-08-01",
-  "end_date": "2025-03-31",
-  "initial_odometer": 17569,
-  "inr_per_km": 10,
-  "work_related_km": 110,
+  "start_date": "2025-04-01",
+  "end_date": "2025-11-30",
+  "initial_odometer": 23000,
+  "inr_per_km": 8,
+  "work_related_km": 60,
   "trip_purpose": "Official",
   "client_name": "Blink Charging",
   "is_work_travel": "Y",
@@ -12,7 +12,7 @@
     "name": "Ashish Kumar",
     "id": "BLINKIN065",
     "department": "Technology",
-    "manager": "Ajay Singh"
+    "manager": "Jatinder Singh"
   },
   "vehicle": {
     "make": "Hyundai",
@@ -24,11 +24,11 @@
   "holidays": [
     "2024-08-15",
     "2024-10-02",
-    "2024-10-31",
-    "2024-11-01",
-    "2024-12-25",
-    "2025-01-01",
-    "2025-01-26"
+    "2024-10-21",
+    "2024-10-22",
+    "2024-10-23",
+    "2024-11-26",
+    "2024-11-27"
   ],
-  "output_file_path": "Financial_Year_2024_25_Log_Book.xlsx"
+  "output_file_path": "Financial_Year_2025_26_Log_Book.xlsx"
 }

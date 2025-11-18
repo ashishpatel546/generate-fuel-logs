@@ -1,3 +1,5 @@
 venv
 *Financial*
 *.log
+_DS_Store
+.DS_Store
